@@ -1,0 +1,111 @@
+1) Create local repository
+D:\Python\Udemy\password_generator>git init
+Initialized empty Git repository in D:/Python/Udemy/password_generator/.git/
+
+2) Check to see if the hidden .git folder is created
+
+D:\Python\Udemy\password_generator>dir /ah
+ Volume in drive D is New Volume
+ Volume Serial Number is 741F-08B1
+
+ Directory of D:\Python\Udemy\password_generator
+
+16-03-2020  20:47    <DIR>          .git
+               0 File(s)              0 bytes
+               1 Dir(s)  439,652,220,928 bytes free
+3) Add all the files to the repository
+D:\Python\Udemy\password_generator>git add -A
+
+4) Check the status
+D:\Python\Udemy\password_generator>git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+        new file:   db.sqlite3
+        new file:   generator/__init__.py
+        new file:   generator/__pycache__/__init__.cpython-37.pyc
+        new file:   generator/__pycache__/admin.cpython-37.pyc
+        new file:   generator/__pycache__/models.cpython-37.pyc
+        new file:   generator/__pycache__/views.cpython-37.pyc
+        new file:   generator/admin.py
+        new file:   generator/apps.py
+        new file:   generator/migrations/__init__.py
+        new file:   generator/migrations/__pycache__/__init__.cpython-37.pyc
+        new file:   generator/models.py
+        new file:   generator/templates/generator/about.html
+        new file:   generator/templates/generator/home.html
+        new file:   generator/templates/generator/password.html
+        new file:   generator/tests.py
+        new file:   generator/views.py
+        new file:   manage.py
+        new file:   password_generator/__init__.py
+        new file:   password_generator/__pycache__/__init__.cpython-37.pyc
+        new file:   password_generator/__pycache__/settings.cpython-37.pyc
+        new file:   password_generator/__pycache__/urls.cpython-37.pyc
+        new file:   password_generator/__pycache__/wsgi.cpython-37.pyc
+        new file:   password_generator/asgi.py
+        new file:   password_generator/settings.py
+        new file:   password_generator/urls.py
+        new file:   password_generator/wsgi.py
+
+5) Commit the files
+D:\Python\Udemy\password_generator>git commit -m "My First Python django framework project commit "
+[master (root-commit) 3919390] My First Python django framework project commit
+ 26 files changed, 279 insertions(+)
+ create mode 100644 db.sqlite3
+ create mode 100644 generator/__init__.py
+ create mode 100644 generator/__pycache__/__init__.cpython-37.pyc
+ create mode 100644 generator/__pycache__/admin.cpython-37.pyc
+ create mode 100644 generator/__pycache__/models.cpython-37.pyc
+ create mode 100644 generator/__pycache__/views.cpython-37.pyc
+ create mode 100644 generator/admin.py
+ create mode 100644 generator/apps.py
+ create mode 100644 generator/migrations/__init__.py
+ create mode 100644 generator/migrations/__pycache__/__init__.cpython-37.pyc
+ create mode 100644 generator/models.py
+ create mode 100644 generator/templates/generator/about.html
+ create mode 100644 generator/templates/generator/home.html
+ create mode 100644 generator/templates/generator/password.html
+ create mode 100644 generator/tests.py
+ create mode 100644 generator/views.py
+ create mode 100644 manage.py
+ create mode 100644 password_generator/__init__.py
+ create mode 100644 password_generator/__pycache__/__init__.cpython-37.pyc
+ create mode 100644 password_generator/__pycache__/settings.cpython-37.pyc
+ create mode 100644 password_generator/__pycache__/urls.cpython-37.pyc
+ create mode 100644 password_generator/__pycache__/wsgi.cpython-37.pyc
+ create mode 100644 password_generator/asgi.py
+ create mode 100644 password_generator/settings.py
+ create mode 100644 password_generator/urls.py
+ create mode 100644 password_generator/wsgi.py
+
+6) Check the status again
+D:\Python\Udemy\password_generator>git status
+On branch master
+nothing to commit, working tree clean
+
+7) Create the repository in git hub and get the link where you need to upload from local repository to remote
+D:\Python\Udemy\password_generator>git remote add origin https://github.com/shreegowrij1106/password-generator.git
+
+8) Check by using below command
+D:\Python\Udemy\password_generator>git remote -v
+origin  https://github.com/shreegowrij1106/password-generator.git (fetch)
+origin  https://github.com/shreegowrij1106/password-generator.git (push)
+
+9)Push the source from origin to master branch
+D:\Python\Udemy\password_generator>git push origin master
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (31/31), done.
+Writing objects: 100% (33/33), 8.87 KiB | 275.00 KiB/s, done.
+Total 33 (delta 3), reused 0 (delta 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/shreegowrij1106/password-generator.git
+ * [new branch]      master -> master
+
+9) Files uploaded successfully. Check the files in the git hub
