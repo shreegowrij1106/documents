@@ -1,0 +1,2 @@
+1) Download the binaries from the link - https://golang.org/dl/
+2) Get the "go1.13.8.windows-amd64.msi" file and double click to install
