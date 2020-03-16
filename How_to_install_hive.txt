@@ -1,0 +1,18 @@
+1) First, download Hive from the following link:
+http://www.apache.org/dyn/closer.cgi/hive/
+2) Open command prompt, go to the folder where you have download Hive and run the following command to extraxt files.
+$ tar -xvf apache-hive-3.1.1-bin.tar.gz
+3) Add Hive path to the environment variable. Open the environment variable window by searching it in the start menu
+HIVE_HOME = D:\softwares\Hive\apache-hive-3.1.2-bin
+4) Add the HIVE_BIN, HIVE_LIB to the path variable
+5) Download derby from below link
+	https://archive.apache.org/dist/db/derby/db-derby-10.12.1.1/
+6) set DERBY_HOME path	
+7) Set HADOOP_USER_CLASSPATH_FIRST to true value in environment variables
+8) go to D:\softwares\Hadoop\hadoop-3.1.2\sbin and start hadoop server using command start-dfs
+9) 
+
+REFERNCE :- https://www.youtube.com/watch?v=npyRXkMhrgk
+
+
+https://www.youtube.com/watch?v=vLVWrGGqGJU
