@@ -1,0 +1,25 @@
+1) Download the Kafka from the below link
+https://kafka.apache.org/quickstart
+
+2) Navigate to that path
+cd D:\softwares\Kafka\kafka_2.12-2.3.0\bin
+
+3) Start the zookeeper
+bin\windows\zookeeper-server-start.bat config\zookeeper.properties ( change the data file path in zookeeper.properties)
+
+4) start kafka
+bin\windows\kafka-server-start.bat config\server.properties (change the log file path in server.properties)
+
+5) create the topic test 
+D:\softwares\Kafka\kafka_2.12-2.3.0\bin\windows>kafka-topics.bat --create --zookeeper localhost 2181 --replication-factor 1 --partitions 1 --topic test
+Created topic test.
+6) Type some message
+D:\softwares\Kafka\kafka_2.12-2.3.0\bin\windows>kafka-console-producer.bat --broker-list localhost:9092 --topic test
+>this is a message
+>this is another message
+
+7) Read the messages from the consumer
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic test --from-beginning
+this is a message
+this is another message
+
